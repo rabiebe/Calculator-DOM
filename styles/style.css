@@ -1,0 +1,136 @@
+.calculator-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 360px;
+  height: 500px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 10px solid;
+  -o-border-image: linear-gradient(178deg, #EBECEE 50%, #EA3226 50%) 1 stretch repeat;
+     border-image: linear-gradient(178deg, #EBECEE 50%, #EA3226 50%) 1 stretch repeat;
+}
+
+.calculator-container > * {
+  width: calc(360px - 17px);
+}
+
+.calculator-container .display-container {
+  height: calc(500px / 3);
+  background: #EA3226;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.calculator-container .display-container .display {
+  font-size: 54px;
+  padding: 10px;
+  color: #5D5858;
+  font-weight: bolder;
+}
+
+.calculator-container .container-buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1FR)[4];
+      grid-template-columns: repeat(4, 1FR);
+  height: 350px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.calculator-container .container-buttons .number-button0 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.calculator-container .container-buttons .number-button1 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.calculator-container .container-buttons .number-button2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.calculator-container .container-buttons .number-button3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.calculator-container .container-buttons .number-button4 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.calculator-container .container-buttons .number-button5 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.calculator-container .container-buttons .number-button6 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.calculator-container .container-buttons .operation-button-result {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  background: #EA3226;
+  color: #F3D5D4;
+}
+
+.calculator-container .container-buttons > * {
+  border-radius: 100%;
+  background: #EBECEE;
+  color: #5D5858;
+  font-weight: bold;
+  font-size: xx-large;
+  padding: 15px;
+  margin: 5px;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */

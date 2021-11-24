@@ -1,0 +1,39 @@
+.number-button0 {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+
+.number-button1 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+.number-button2 {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+
+.number-button3 {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+
+.number-button4 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.number-button5 {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.number-button6 {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+.operation-button-result {
+  background: #EA3226;
+  color: #F3D5D4;
+}

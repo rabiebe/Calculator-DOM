@@ -1,0 +1,59 @@
+
+@import 'variables/_variables';
+@import 'flex/_flex';
+@import 'buttons/_buttons';
+@import 'grid/_grid';
+
+.calculator-container{
+    @include flex(column, center, space-between);
+    width: 360px;
+    height: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 10px solid;
+    border-image: linear-gradient(
+        178deg,
+        $white 50%,
+        $red 50%
+
+         ) 1 stretch repeat;
+
+         & > *{
+            width: calc(360px - 17px);
+        }
+
+         .display-container{
+            height: calc(500px / 3);
+            background: $red;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            .display{
+                font-size: 54px;
+                padding: 10px;
+                color: $gray;
+                font-weight: bolder;
+            }
+        }
+        .container-buttons{
+            @include designButtons;
+            @include grid(repeat(4, 1FR));
+            height: 350px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            & > *{
+                
+                border-radius: 100%;
+                background: $white;
+                color: $gray;
+                font-weight: bold;
+                font-size: xx-large;
+                padding: 15px;
+                margin: 5px;
+                border: none; 
+            }
+             
+        }
+}
+
+
+
